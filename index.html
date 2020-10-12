@@ -1,0 +1,58 @@
+<!-- En el HTML solo colocamos la estructuda del proyecto por lo que lo importante es verificar el id de las etiquetas ya que los ocuparemos en el JavaScript -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Listas doblemente enlazadas</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+  <H1>Listas doblemente enlazadas</H1>
+    <div class="main">
+    <p> UNIVERSIDAD DIGITAL DEL ESTADO DE MÉXICO</p>
+
+    <p> EN INFORMÁTICA ADMINISTRATIVA</p>
+    <p>ESTUDIANTE: JUAN PABLO SOLANA ORTIZ</p>
+    <p>MATRÍCULA: UDX042010008</p>
+    <p>ASESOR (A): MTRO. GENARO GUTIÉRREZ BECERRIL </p>
+    <p>UNIDAD DE APRENDIZAJE:</p>
+    <p>UNIDAD 3. LISTAS</p>
+    <p>ACTIVIDAD DE APRENDIZAJE:</p>
+    <p>3.1</p>
+    <p>FECHA DE ENTREGA:
+      12 DE OCTUBRE DE 2020</p>
+  </div>
+  <div>
+    <h2>Lista de izquierda a derecha</h2>
+    <label id="lista" class="lista">Vacia</label>
+  </div>
+  <div>
+    <h2>Lista de derecha a izquierda</h2>
+    <label id="listareversed" class="listareversed">Vacia</label>
+  </div>
+
+  <div>
+    <input type="text" id="input" class="input" placeholder="Escribir valor del nuevo nodo" min="1">
+  </div>
+  <div class="options">
+    <div class="add">
+      <button id="addStart">Agregar nodo al inicio</button>
+      <button id="addEnd"> Agregar nodo al final</button>
+    </div>
+    <div class="remove">
+      <button id="deleteStart">Eliminar nodo inicio</button>
+      <button id="deleteEnd">Eliminar nodo final</button>
+    </div>
+    <div class="search">
+      <button id="search">Buscar</button>
+    </div>
+  </div>
+
+  <!-- IMPORTANTE la siguiente linea vincula el arhcivo JavaScript por lo que no se debe retirar -->
+  <script src="./app.js"></script>
+</body>
+
+</html>
