@@ -6,15 +6,36 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Listas doblemente enlazadas</title>
-  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 </head>
-
-<body>
-  <H1>Listas doblemente enlazadas</H1>
-    <div class="main">
+<body class="p-3 mb-2 bg-success text-white">
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">LISTA DOBLEMENTE ENLAZADAS</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Features</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Pricing</a>
+      </li>
+    </ul>
+    <span class="navbar-text">
+     UDEMEX
+    </span>
+  </div>
+</nav>
+  <div class="container">
+  <div class="row">
+    <div class="col-sm">
     <p> UNIVERSIDAD DIGITAL DEL ESTADO DE MÉXICO</p>
-
-    <p> EN INFORMÁTICA ADMINISTRATIVA</p>
+    <p> LICENCIATURA EN INFORMÁTICA ADMINISTRATIVA</p>
     <p>ESTUDIANTE: JUAN PABLO SOLANA ORTIZ</p>
     <p>MATRÍCULA: UDX042010008</p>
     <p>ASESOR (A): MTRO. GENARO GUTIÉRREZ BECERRIL </p>
@@ -24,35 +45,41 @@
     <p>3.1</p>
     <p>FECHA DE ENTREGA:
       12 DE OCTUBRE DE 2020</p>
-  </div>
-  <div>
-    <h2>Lista de izquierda a derecha</h2>
+    </div>
+    <div class ="border border-danger">
+       <h2>Lista de izquierda a derecha</h2>
     <label id="lista" class="lista">Vacia</label>
-  </div>
+ 
   <div>
     <h2>Lista de derecha a izquierda</h2>
     <label id="listareversed" class="listareversed">Vacia</label>
   </div>
 
   <div>
-    <input type="text" id="input" class="input" placeholder="Escribir valor del nuevo nodo" min="1">
+    <input type="text" id="input" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"placeholder="Escribir valor del nuevo nodo">
   </div>
   <div class="options">
     <div class="add">
-      <button id="addStart">Agregar nodo al inicio</button>
-      <button id="addEnd"> Agregar nodo al final</button>
+      <button id="addStart" class="btn btn-info">Agregar nodo al inicio</button>
+      <button id="addEnd" class="btn btn-info"> Agregar nodo al final</button>
     </div>
     <div class="remove">
-      <button id="deleteStart">Eliminar nodo inicio</button>
-      <button id="deleteEnd">Eliminar nodo final</button>
+      <button id="deleteStart" class="btn btn-danger">Eliminar nodo inicio</button>
+      <button id="deleteEnd"class="btn btn-danger" >Eliminar nodo final</button>
     </div>
     <div class="search">
-      <button id="search">Buscar</button>
+      <button id="search" class="btn btn-primary">Buscar</button>
     </div>
   </div>
+    </div>
+  
+</div>
 
+ </div>
   <!-- IMPORTANTE la siguiente linea vincula el arhcivo JavaScript por lo que no se debe retirar -->
   <script src="./app.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </body>
-
 </html>

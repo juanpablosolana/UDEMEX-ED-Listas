@@ -34,14 +34,23 @@ btnSearch.addEventListener("click", function () {
 
 function addStart() {
   let valorstart = document.getElementById("input").value;
+  if(valorstart===''){
+    alert("Ingresa un valor")
+  }else {
   let nuevoUltimo = lista.unshift(valorstart);
   mostrarLista();
+  }
 }
 
 function addEnd() {
   let valorend = document.getElementById("input").value;
-  let nuevoUltimo = lista.push(valorend);
-  mostrarLista();
+  if(valorend===''){
+    alert("Ingrese un valor")
+  } else{
+     let nuevoUltimo = lista.push(valorend);
+     mostrarLista();
+  }
+ 
 }
 
 function deleteStart() {
